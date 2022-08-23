@@ -44,8 +44,24 @@ const App = () => {
     <div className="app">
       <NovoItem handleNewItem={handleNewItem} />
       <hr />
+
+      <h2> All Todos</h2>
       <Lista
         lista={lista}
+        handleCheckItem={handleCheckItem}
+        handleDeleteItem={handleDeleteItem}
+      />
+
+      <h2> Only checked</h2>
+      <Lista
+        lista={lista.filter((item) => item.checked)}
+        handleCheckItem={handleCheckItem}
+        handleDeleteItem={handleDeleteItem}
+      />
+
+      <h2> Only notchecked</h2>
+      <Lista
+        lista={lista.filter((item) => !item.checked)}
         handleCheckItem={handleCheckItem}
         handleDeleteItem={handleDeleteItem}
       />
