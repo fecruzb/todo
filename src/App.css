@@ -1,0 +1,13 @@
+.app {
+  padding: 32px;
+}
+
+.lista {
+    padding: 8px;
+    border: 1px solid black;
+
+}
+
+.lista-item {
+    padding: 4px;
+}
